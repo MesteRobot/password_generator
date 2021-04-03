@@ -1,4 +1,4 @@
 # password_generator
 
-[] Create the main view
-[] create the password generator function
+[ ] Create the main view
+[ ] create the password generator function
