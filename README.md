@@ -1,4 +1,5 @@
 # password_generator
 
-- [ ] Create the main view
-- [ ] create the password generator function
+- [x] Create the main view
+- [x] Create the password generator function
+- [x] Create the about page
