@@ -20,4 +20,5 @@ from generator import views
 urlpatterns = [
     path('', views.Home, name="home"),
     path('password/', views.PasswordGenerator, name="password"),
+    path('about/', views.About, name= "about"),
 ]

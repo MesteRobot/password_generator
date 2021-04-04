@@ -13,7 +13,7 @@ def PasswordGenerator(request):
     specials = "!@#$%^&*_+<>?;:"
     numbers = "0123456789"
     generated_password = ""
-    password_length = int(request.GET.get('length'))
+    password_length = int(request.GET.get('length', default=12))
 
     pass_seed = lower_chars
     if request.GET.get('uppercase'):
@@ -27,3 +27,7 @@ def PasswordGenerator(request):
         generated_password += random.choice(list(pass_seed))
 
     return render(request, "generator/password.html", {"password": generated_password})
+
+
+def About(request):
+    return render(request, "generator/about.html")
